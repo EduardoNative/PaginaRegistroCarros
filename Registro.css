@@ -9,6 +9,7 @@ html {
     background-color: rgb(172, 168, 168);
 }
 
+
 .container {
     padding-top: 15vh;
     display: flex;
@@ -63,4 +64,5 @@ table th, td {
     border-bottom: 1.5px solid #090909;
     width: 20vh;
     font-size: x-large;
+    background-color: cadetblue;
 }

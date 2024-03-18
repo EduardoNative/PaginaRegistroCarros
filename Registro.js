@@ -16,11 +16,11 @@ class UI {
         <td>${car.brand}</td>
         <td>${car.model}</td>
         <td>${car.year}</td>
-        <td> <a href="#" class="delete">X</a></td>
+        <td> <a href="#" class="delete">Borrar</a></td>
         `;
         cartbody.appendChild(tr);
     }
-    //agregando desde copia
+    //agregando
     showAlert(message, className) {
         const div = document.createElement('div');
         div.className = `alert ${className}`;
@@ -45,7 +45,7 @@ class UI {
     }
 }
 
-//probando localStorage dedsde copia
+//probando localStorage
 class Store {
 
     static getCars() {
@@ -57,7 +57,7 @@ class Store {
         }
         return cars;
     }
-    //probando desde copia
+    //probando
     static displayCars() {
         const cars = Store.getCars();
 
@@ -85,9 +85,9 @@ class Store {
 
 }
 
-//probando y agregando desde copia
+//probando y agregando 
 document.addEventListener('DOMContentLoaded', Store.displayCars());
-//... copia
+//...
 document.getElementById('car-form').addEventListener('submit',
     function (e) {
         var brand = document.getElementById("brand").value;
@@ -97,7 +97,7 @@ document.getElementById('car-form').addEventListener('submit',
         const car = new Car(brand, model, year); //asi se crea un objeto de la clase carro
         const ui = new UI(); //asi se crea un objeto de la clase
 
-        //validando desde copia
+        //validando 
         if (brand === '' || model === '' || year === '') {
             ui.showAlert('porfavor rellenar espacios', 'error');
         } else {
@@ -113,7 +113,7 @@ document.getElementById('car-form').addEventListener('submit',
 
 
 
-//probando copia
+//probando 
 document.getElementById('car-tbody').addEventListener('click', function (e) {
     const ui = new UI();
     ui.delete(e.target);
