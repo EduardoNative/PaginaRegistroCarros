@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEGISTRO DE CARROS</title>
+    <link rel="stylesheet" href="Registro.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="car-form" class="form">
+            <div class="title">
+                <h1>REGISTRO DE MODELOS DE CARROS</h1>
+            </div>
+
+            <div class="class">
+                <label>Marca de Carro</label>
+                <input id="brand" class="input-form" type="text" placeholder="pon aqui tu marca favorito">
+            </div>
+
+            <div class="class">
+                <label>Modelo de Carro</label>
+                <input id="model" class="input-form" type="text" placeholder="pon aqui tu modelo favorito">
+            </div>
+
+            <div class="class">
+                <label>De que año es el carro</label>
+                <input id="year" class="input-form" type="number" placeholder="de que año es">
+            </div>
+<br>
+            <div>
+                <input type="submit" value="registrar" class="button">
+            </div>
+        </form>
+
+        <table id="table" class="table">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="car-tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="Registro.js"></script>
+</body>
+
+</html>
